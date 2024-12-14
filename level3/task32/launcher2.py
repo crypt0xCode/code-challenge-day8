@@ -15,16 +15,19 @@ from level3.task32.shop import Shop
 
 def start_level32():
     dog = Dog('Fluffy', 10)
+    print(f'{str(dog)} says: {dog.sound()}')
     cat = Cat('Orange', 5)
+    print(f'{str(cat)} says: {cat.sound()}')
     bird = Bird('Jackie', 4)
+    print(f'{str(bird)} says: {bird.sound()}')
     animals: list = [dog, cat, bird]
     pet_shop = Shop(animals, 10)
     print(f'{str(pet_shop)}\n')
 
     print('Buy new animal.')
-    pet_shop.buy_animal(
-        Animal('Rattie', 10)
-    )
+    animal = Animal('Rattie', 10)
+    print(f'{str(animal)} says: {animal.sound()}')
+    pet_shop.buy_animal(animal)
     print('After buying:')
     print(f'{str(pet_shop)}\n')
 

@@ -10,4 +10,4 @@ class Animal:
 
 
     def sound(self) -> str:
-        pass
+        return 'Animal sound!'

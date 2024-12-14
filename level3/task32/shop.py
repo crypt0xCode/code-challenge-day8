@@ -24,7 +24,7 @@ class Shop:
         return new_s
 
 
-    def buy_animal(self, animal: Animal):
+    def buy_animal(self, animal: Animal) -> None:
         """
         Add new animal in animals list.
 
@@ -35,7 +35,7 @@ class Shop:
             self.animals.append(animal)
 
 
-    def sell_animal(self, animal: Animal):
+    def sell_animal(self, animal: Animal) -> None:
         """
         Remove animal from animals list.
 
